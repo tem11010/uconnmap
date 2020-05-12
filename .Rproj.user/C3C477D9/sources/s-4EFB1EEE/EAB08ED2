@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589296200695.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EAB08ED2",
+    "lastKnownWriteTime" : 1589296322,
+    "last_content_update" : 1589296322332,
+    "path" : "~/COVID/uconn_map.Rmd",
+    "project_path" : "uconn_map.Rmd",
+    "properties" : {
+        "cursorPosition" : "15,15",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
