@@ -1,0 +1,27 @@
+library(ggmap)
+library(plotly)
+library(sp)
+library(rgeos)
+library(rgdal)
+
+
+buildings <- readOGR(dsn = '.', 
+                     layer = "test")
+
+
+map <- get_map(location = c(left =-72.282810,
+                             bottom =41.794913,
+                            right = -72.227382,
+                            top = 41.828768), 
+               maptype = "satellite", source = "google")
+
+buildings.p <- as.data.frame(buildings)
+  
+  
+p <- ggmap(map)
+p <- p + geom_point(data = buildings.p, 
+                    aes(x = coords.x1, 
+                        y = coords.x2, color = Name))+
+         theme(legend.position = "none")
+  
+ggplotly(p)
